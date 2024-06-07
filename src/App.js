@@ -1,11 +1,7 @@
-
+import { memo } from "react";
 import "./App.css";
 import NewsPage from './NewsPage';
-
-function App() {
-	return (
-		<NewsPage />
-	);
-}
-
+const App = memo(function App() {
+  return <NewsPage />;
+});
 export default App;
